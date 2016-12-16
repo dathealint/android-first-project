@@ -1,112 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.datnguyen.firstproject.MainActivity">
+    android:fillViewport="false"
+    >
 
-    <ImageView
+    <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/img_background"
-        />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/main_info_padding"
-        >
-
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/text_title"
-            android:textStyle="bold"
-            android:layout_marginBottom="@dimen/spacing_section"
-            />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.datnguyen.firstproject.MainActivity">
 
         <ImageView
-            android:id="@+id/imvAddress"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/icon_address"
-            android:layout_below="@id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_background"
             />
 
-        <TextView
-            android:id="@+id/tvAddress"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceListItem"
-            android:text="@string/text_address"
-            android:layout_below="@id/tvTitle"
-            android:layout_toRightOf="@id/imvAddress"
-            android:layout_marginLeft="@dimen/address_phone_margin"
+            android:padding="@dimen/main_info_padding"
+            >
 
-            />
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_title"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/spacing_section"
+                />
 
-        <ImageView
-            android:id="@+id/imvPhone"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/icon_phone"
-            android:layout_below="@id/tvAddress"
-            />
+            <ImageView
+                android:id="@+id/imvAddress"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_address"
+                android:layout_below="@id/tvTitle"
+                />
 
-        <TextView
-            android:id="@+id/tvPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceListItem"
-            android:text="@string/text_phone"
-            android:layout_below="@id/tvAddress"
-            android:layout_toRightOf="@id/imvPhone"
-            android:layout_marginLeft="@dimen/address_phone_margin"
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:text="@string/text_address"
+                android:layout_below="@id/tvTitle"
+                android:layout_toRightOf="@id/imvAddress"
+                android:layout_marginLeft="@dimen/address_phone_margin"
+                />
 
-            />
+            <ImageView
+                android:id="@+id/imvPhone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_phone"
+                android:layout_below="@id/tvAddress"
+                />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:text="@string/text_phone"
+                android:layout_below="@id/tvAddress"
+                android:layout_toRightOf="@id/imvPhone"
+                android:layout_marginLeft="@dimen/address_phone_margin"
+                />
 
 
-        <TextView
-            android:id="@+id/tvHoursLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceListItem"
-            android:textStyle="bold"
-            android:text="@string/text_open_hours_label"
-            android:layout_below="@id/tvPhone"
-            android:layout_marginTop="@dimen/spacing_section"
+            <TextView
+                android:id="@+id/tvHoursLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textStyle="bold"
+                android:text="@string/text_open_hours_label"
+                android:layout_below="@id/tvPhone"
+                android:layout_marginTop="@dimen/spacing_section"
+                />
 
-            />
+            <TextView
+                android:id="@+id/tvHoursValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:text="@string/text_open_hours_value"
+                android:layout_below="@id/tvPhone"
+                android:layout_toRightOf="@id/tvHoursLabel"
+                android:layout_marginLeft="@dimen/address_phone_margin"
+                android:layout_marginTop="@dimen/spacing_section"
+                />
 
-        <TextView
-            android:id="@+id/tvHoursValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceListItem"
-            android:text="@string/text_open_hours_value"
-            android:layout_below="@id/tvPhone"
-            android:layout_toRightOf="@id/tvHoursLabel"
-            android:layout_marginLeft="@dimen/address_phone_margin"
-            android:layout_marginTop="@dimen/spacing_section"
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/text_description"
+                android:layout_below="@id/tvHoursLabel"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/spacing_section"
+                />
 
-            />
-
-        <TextView
-            android:id="@+id/tvDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/text_description"
-            android:layout_below="@id/tvHoursLabel"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="@dimen/spacing_section"
-            />
-
-    </RelativeLayout>
-
-</LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

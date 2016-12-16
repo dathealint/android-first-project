@@ -2,7 +2,7 @@
     <string name="app_name">DN-1stPrj-ViVoCity</string>
     <string name="text_title">VivoCity</string>
     <string name="text_description">VivoCity (Chinese: 怡丰城) is the largest shopping mall in Singapore. Located in the HarbourFront precinct of Bukit Merah, it was designed by the Japanese architect Toyo Ito. Its name is derived from the word vivacity.</string>
-    <string name="text_address">1 Harbourfront Walk, Singapore 098585 test long mesasge hello there</string>
+    <string name="text_address">1 Harbourfront Walk, Singapore 098585</string>
     <string name="text_phone">+65 6377 6860</string>
     <string name="text_open_hours_label">Hours:</string>
     <string name="text_open_hours_value">10AM-10PM (SGT)</string>
